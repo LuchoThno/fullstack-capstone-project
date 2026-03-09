@@ -1,65 +1,25 @@
----
-name: User Story
-about: Create a new user story for the product backlog
-title: "[USER STORY] "
-labels: user-story, backlog
-assignees: ""
----
-
 # User Story
 
-## Story Summary
-Short description of the user story.
+## Description
 
----
-
-## User Story
-
-**As a** [type of user]  
-**I need** [some goal / functionality]  
-**So that** [some reason / benefit]
-
----
-
-## Business Value
-
-Describe the value this feature provides to the user or the business.
-
-Examples:
-- Improve user engagement
-- Enable core functionality of the platform
-- Reduce operational friction
-
----
-
-## Scope
-
-### In Scope
-- List the elements included in this story
-- Backend functionality
-- Frontend components
-- Database updates
-
-### Out of Scope
-- Features not included in this story
-- Future enhancements
+**As a** [role]  
+**I need** [function]  
+**So that** [benefit]
 
 ---
 
 ## Details and Assumptions
 
-Document important information about the feature.
+- [Describe the feature in more detail]
+- [Document business rules]
+- [Describe system constraints]
+- [List dependencies or integrations]
+- [Document any assumptions]
 
-- User must be authenticated
-- Data must be stored in the database
-- API must follow REST conventions
-- UI must follow the design system
-
-Dependencies:
-
-- Authentication service
-- Database connection
-- Existing API endpoints
+Example:
+- The user must be authenticated.
+- The system must validate required fields.
+- Data will be stored in the database.
 
 ---
 
@@ -68,13 +28,12 @@ Dependencies:
 ```gherkin
 Feature: [Feature name]
 
-Scenario: Successful operation
-Given [initial context]
-And [additional context]
-When [action performed]
-Then [expected result]
+Scenario: [Main scenario]
+Given [some context]
+When [certain action is taken]
+Then [the outcome of action is observed]
 
-Scenario: Error condition
-Given [initial context]
-When [invalid action]
-Then [error message or failure state]
+Scenario: [Alternative scenario]
+Given [some context]
+When [a different action is taken]
+Then [another outcome is observed]
